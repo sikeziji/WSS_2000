@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WSS_2000</string>
+    <string name="loginC">登录账号：</string>
+    <string name="public_user">公共</string>
+</resources>
