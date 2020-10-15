@@ -5,7 +5,7 @@ import android.os.Message;
 /**
  * EventMessage 基础类
  */
-public abstract class BaseEventMessage {
+public class BaseEventMessage {
 
     private String sCode; // code为事件码，使用的时候给不同的事件类型指定不同的code。
 

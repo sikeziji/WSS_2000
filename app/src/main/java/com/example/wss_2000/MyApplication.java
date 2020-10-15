@@ -25,15 +25,15 @@ import me.yokeyword.fragmentation.helper.ExceptionHandler;
  */
 public class MyApplication extends Application {
 
-    private RefWatcher mRefWatcher = null;
+    //    private RefWatcher mRefWatcher = null;
     private static Application application = null;
     private static Context context = null;
 
-
-    public static RefWatcher getRefWatcher(Context context) {
-        MyApplication application = (MyApplication) context.getApplicationContext();
-        return application.mRefWatcher;
-    }
+    //TODO 未添加 LeakCanary
+//    public static RefWatcher getRefWatcher(Context context) {
+//        MyApplication application = (MyApplication) context.getApplicationContext();
+//        return application.mRefWatcher;
+//    }
 
 
     public static Application getMyApplication() {
@@ -59,7 +59,7 @@ public class MyApplication extends Application {
 
         try {
             // 内存泄漏检测
-            mRefWatcher = setupLeakCanary();
+//            mRefWatcher = setupLeakCanary();
             // 进程守护
             DualProcessDaemon.start(context);
         } catch (Exception e) {

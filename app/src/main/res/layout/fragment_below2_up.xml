@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/layout_left"-->
+    <!--        android:layout_width="@dimen/x105"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="@drawable/line"-->
+    <!--        android:orientation="vertical">-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="@dimen/x10"-->
+    <!--            />-->
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/btnLeft1"-->
+    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_height="@dimen/x40"-->
+    <!--            android:background="@android:color/transparent"-->
+    <!--            android:scaleType="fitXY"-->
+    <!--            android:src="@drawable/l2l1" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/btnLeft2"-->
+    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_height="@dimen/x40"-->
+    <!--            android:background="@android:color/transparent"-->
+    <!--            android:scaleType="fitXY"-->
+    <!--            android:src="@drawable/l2l2" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/btnLeft3"-->
+    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_height="@dimen/x40"-->
+    <!--            android:background="@android:color/transparent"-->
+    <!--            android:scaleType="fitXY"-->
+    <!--            android:src="@drawable/l2l3" />-->
+
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/btnLeft4"-->
+    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_height="@dimen/x40"-->
+    <!--            android:background="@android:color/transparent"-->
+    <!--            android:scaleType="fitXY"-->
+    <!--            android:src="@drawable/l2l4" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/btnLeft5"-->
+    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_height="@dimen/x40"-->
+    <!--            android:background="@android:color/transparent"-->
+    <!--            android:scaleType="fitXY"-->
+    <!--            android:src="@drawable/l_setting_3" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/btnLeft6"-->
+    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_height="@dimen/x40"-->
+    <!--            android:background="@android:color/transparent"-->
+    <!--            android:scaleType="fitXY"-->
+    <!--            android:src="@drawable/l_setting2_6" />-->
+
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/layout_left"
+        android:layout_width="@dimen/x105"
+        android:layout_height="match_parent"
+        android:background="@drawable/line"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnLeft1"
+            android:layout_width="@dimen/x105"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="采样模式" />
+
+        <Button
+            android:id="@+id/btnLeft2"
+            android:layout_width="@dimen/x105"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="留样模式" />
+
+        <Button
+            android:id="@+id/btnLeft3"
+            android:layout_width="@dimen/x105"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="供样模式" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_below2_up_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

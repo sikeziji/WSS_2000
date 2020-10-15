@@ -76,6 +76,13 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    implementation files('libs/ycsdk.jar')
+    /*Excel 包*/
+    implementation project(':jxl')
+    /*微嵌驱动包*/
+    implementation project(':weiqian')
+
+
 //    RecycleView
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 

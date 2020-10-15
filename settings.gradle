@@ -1,2 +1,2 @@
-include ':app'
+include ':app',':weiqian',':jxl'
 rootProject.name = "WSS_2000"
