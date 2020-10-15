@@ -1,4 +1,5 @@
-package com.example.wss_2000.fragment.below2;
+package com.example.wss_2000.fragment.below2.content1.sampledetail;
+
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,12 +12,6 @@ import com.example.wss_2000.R;
 import com.example.wss_2000.base.fragment.BaseFragment;
 import com.example.wss_2000.base.fragment.FragmentUtils;
 import com.example.wss_2000.content.MessageContent;
-import com.example.wss_2000.fragment.BlowFragment;
-import com.example.wss_2000.fragment.below2.content1detail.Left2_Content1_detail1;
-import com.example.wss_2000.fragment.below2.content1detail.Left2_Content1_detail2;
-import com.example.wss_2000.fragment.below2.content1detail.Left2_Content1_detail3;
-import com.example.wss_2000.fragment.below2.content1detail.Left2_Content1_detail4;
-import com.example.wss_2000.fragment.below2.content1detail.Left2_Content1_detail5;
 import com.example.wss_2000.util.EventBusUtil;
 import com.example.wss_2000.widget.Widget;
 
@@ -31,10 +26,10 @@ import butterknife.BindView;
  * @CreateDate: 2020/10/15 14:51
  * @Version: 1.0
  */
-public class Left2_Content1 extends BaseFragment implements AdapterView.OnItemSelectedListener {
+public class Left2_Content1_Sample extends BaseFragment implements AdapterView.OnItemSelectedListener {
 
 
-    private static Left2_Content1 fragment;
+    private static Left2_Content1_Sample fragment;
 
     @BindView(R.id.samplingMode)
     Spinner samplingMode;
@@ -50,7 +45,7 @@ public class Left2_Content1 extends BaseFragment implements AdapterView.OnItemSe
     public static BaseFragment newInstance() {
         Bundle args = new Bundle();
         if (fragment == null) {
-            fragment = new Left2_Content1();
+            fragment = new Left2_Content1_Sample();
         }
         fragment.setArguments(args);
         return fragment;
@@ -117,6 +112,8 @@ public class Left2_Content1 extends BaseFragment implements AdapterView.OnItemSe
                     case "串口控制":
                         addAndshowFragment(position, Left2_Content1_detail5.newInstance());
                         break;
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + mSamplingModeArray[position]);
                 }
                 break;
         }

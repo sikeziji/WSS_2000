@@ -1,4 +1,4 @@
-package com.example.wss_2000.fragment.below2;
+package com.example.wss_2000.fragment.below2.content1;
 
 import android.os.Bundle;
 import android.view.View;
@@ -15,14 +15,14 @@ import com.example.wss_2000.base.fragment.BaseFragment;
  * @CreateDate: 2020/10/15 16:27
  * @Version: 1.0
  */
-public class Left2_Content2 extends BaseFragment {
+public class Left2_Content3 extends BaseFragment {
 
-    private static Left2_Content2 fragment;
+    private static Left2_Content3 fragment;
 
-    public static Left2_Content2 newInstance() {
+    public static Left2_Content3 newInstance() {
         Bundle args = new Bundle();
         if (fragment == null) {
-            fragment = new Left2_Content2();
+            fragment = new Left2_Content3();
         }
         fragment.setArguments(args);
         return fragment;
@@ -30,7 +30,7 @@ public class Left2_Content2 extends BaseFragment {
 
     @Override
     protected int getLayoutResId() {
-        return R.layout.left2fragment2;
+        return R.layout.left2fragment3;
     }
 
     @Override

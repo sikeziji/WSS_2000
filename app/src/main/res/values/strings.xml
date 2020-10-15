@@ -1182,6 +1182,11 @@
         <item>瞬时采样</item>
         <item>串口控制</item>
     </string-array>
+    <string-array name="reservedSampleMode">
+        <item>超标留样</item>
+        <item>同步留样</item>
+        <item>串口控制留样</item>
+    </string-array>
 
     <string-array name="loginUsers">
         <item>用户</item>

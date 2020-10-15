@@ -1,4 +1,4 @@
-package com.example.wss_2000.fragment.below2.content1detail;
+package com.example.wss_2000.fragment.below2.content1.sampledetail;
 
 import android.os.Bundle;
 import android.view.View;

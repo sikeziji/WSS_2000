@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.os.Message;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import com.example.wss_2000.R;
 import com.example.wss_2000.base.BaseEventMessage;
 import com.example.wss_2000.base.fragment.BaseFragment;
 import com.example.wss_2000.base.fragment.FragmentUtils;
+import com.example.wss_2000.fragment.below2.content1.reservedetail.Left2_Content2_Reserved;
+import com.example.wss_2000.fragment.below2.content1.Left2_Content3;
+import com.example.wss_2000.fragment.below2.content1.sampledetail.Left2_Content1_Sample;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
@@ -34,8 +36,10 @@ public class Below2UpList extends BaseFragment {
     Button btnLeft2;
     @BindView(R.id.btnLeft3)
     Button btnLeft3;
+    @BindView(R.id.btnLeft4)
+    Button btnLeft4;
 
-    private BaseFragment[] mFragments = new BaseFragment[3];
+    private BaseFragment[] mFragments = new BaseFragment[4];
 
 
     private int position = 0, prePosition = 0;
@@ -60,7 +64,7 @@ public class Below2UpList extends BaseFragment {
 
     @Override
     public View initView(View view) {
-        addAndshowFragment(position, Left2_Content1.newInstance());
+        addAndshowFragment(position, Left2_Content1_Sample.newInstance());
 //
 //        if (getModePermissions(mCompName, "测量参数")) {
 //            showFragment(mFragments[0]);
@@ -88,19 +92,22 @@ public class Below2UpList extends BaseFragment {
     }
 
 
-    @OnClick({R.id.btnLeft1, R.id.btnLeft2, R.id.btnLeft3})
+    @OnClick({R.id.btnLeft1, R.id.btnLeft2, R.id.btnLeft3, R.id.btnLeft4})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnLeft1:
                 position = 0;
-                addAndshowFragment(position, Left2_Content1.newInstance());
+                addAndshowFragment(position, Left2_Content1_Sample.newInstance());
                 break;
             case R.id.btnLeft2:
                 position = 1;
-                addAndshowFragment(position, Left2_Content2.newInstance());
+                addAndshowFragment(position, Left2_Content2_Reserved.newInstance());
                 break;
             case R.id.btnLeft3:
                 position = 2;
+                addAndshowFragment(position, Left2_Content3.newInstance());
+            case R.id.btnLeft4:
+                position = 3;
                 addAndshowFragment(position, Left2_Content3.newInstance());
                 break;
         }

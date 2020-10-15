@@ -113,8 +113,8 @@ public abstract class BaseFragment extends Fragment {
         //fixInputMethodManagerLeak(MyApplication.getMyAppContext());
 
         super.onDestroy();
-        RefWatcher refWatcher = MyApplication.getRefWatcher(MyApplication.getMyAppContext());
-        refWatcher.watch(this);
+//        RefWatcher refWatcher = MyApplication.getRefWatcher(MyApplication.getMyAppContext());
+//        refWatcher.watch(this);
         release();
         unbinder.unbind();
         if (isRegisteredEventBus()) {

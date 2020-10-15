@@ -80,7 +80,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:text="采样模式" />
+            android:text="运行设置" />
 
         <Button
             android:id="@+id/btnLeft2"
@@ -88,7 +88,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:text="留样模式" />
+            android:text="时间设置" />
 
         <Button
             android:id="@+id/btnLeft3"
@@ -96,7 +96,15 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:text="供样模式" />
+            android:text="系统设置" />
+
+        <Button
+            android:id="@+id/btnLeft4"
+            android:layout_width="@dimen/x105"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="通讯设置" />
 
     </LinearLayout>
 
