@@ -8,7 +8,7 @@
     <LinearLayout
         android:id="@+id/layout_up"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/y40"
         android:background="@drawable/line"
         android:orientation="horizontal">
 
@@ -19,7 +19,7 @@
             android:layout_height="@dimen/y40"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:text="运行设置" />
+            android:text="采样模式" />
 
         <Button
             android:id="@+id/btnLeft2"
@@ -27,7 +27,7 @@
             android:layout_height="@dimen/y40"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:text="时间设置" />
+            android:text="留样模式" />
 
         <Button
             android:id="@+id/btnLeft3"
@@ -35,7 +35,7 @@
             android:layout_height="@dimen/y40"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:text="系统设置" />
+            android:text="供样模式" />
 
 
     </LinearLayout>

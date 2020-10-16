@@ -1,4 +1,4 @@
-package com.example.wss_2000.fragment.below2.content1.sampledetail;
+package com.example.wss_2000.fragment.below2.content1;
 
 
 import android.os.Bundle;
@@ -12,6 +12,11 @@ import com.example.wss_2000.R;
 import com.example.wss_2000.base.fragment.BaseFragment;
 import com.example.wss_2000.base.fragment.FragmentUtils;
 import com.example.wss_2000.content.MessageContent;
+import com.example.wss_2000.fragment.below2.content1.sampledetail.Left2_Content1_detail1;
+import com.example.wss_2000.fragment.below2.content1.sampledetail.Left2_Content1_detail2;
+import com.example.wss_2000.fragment.below2.content1.sampledetail.Left2_Content1_detail3;
+import com.example.wss_2000.fragment.below2.content1.sampledetail.Left2_Content1_detail4;
+import com.example.wss_2000.fragment.below2.content1.sampledetail.Left2_Content1_detail5;
 import com.example.wss_2000.util.EventBusUtil;
 import com.example.wss_2000.widget.Widget;
 
@@ -53,7 +58,7 @@ public class Left2_Content1_Sample extends BaseFragment implements AdapterView.O
 
     @Override
     protected int getLayoutResId() {
-        return R.layout.left2fragment1;
+        return R.layout.left2fragment_sampling;
     }
 
     @Override

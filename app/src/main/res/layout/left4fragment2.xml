@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x15">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_analog_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_analog_test_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/y10"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/analog_test"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x14" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnIOTest"
+                android:layout_width="@dimen/y70"
+                android:layout_height="@dimen/x20"
+                android:layout_marginStart="@dimen/y20"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="@dimen/x3"
+                android:paddingRight="@dimen/x3"
+                android:text="@string/output_test"
+                android:textAllCaps="false"
+                android:textSize="@dimen/x11" />
+
+            <Button
+                android:id="@+id/btnTD12"
+                android:layout_width="@dimen/y70"
+                android:layout_height="@dimen/x20"
+                android:layout_marginStart="@dimen/y10"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="@dimen/x3"
+                android:paddingRight="@dimen/x3"
+                android:text="@string/channel_1"
+                android:textAllCaps="false"
+                android:textSize="@dimen/x11" />
+
+            <EditText
+                android:id="@+id/eTmnl"
+                style="@style/CEditText"
+                android:ems="4"
+                android:inputType="numberDecimal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/y5"
+                android:text="@string/ma"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x10" />
+
+            <Button
+                android:id="@+id/btnAnalogTest"
+                android:layout_width="@dimen/y50"
+                android:layout_height="@dimen/x20"
+                android:layout_marginStart="@dimen/y20"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="@dimen/x3"
+                android:paddingRight="@dimen/x3"
+                android:text="@string/sure"
+                android:textAllCaps="false"
+                android:textSize="@dimen/x11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x4"
+            android:layout_marginTop="@dimen/x5"
+            android:background="@drawable/line_h"
+            android:orientation="horizontal"></LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/y10"
+        android:layout_marginTop="@dimen/x5"
+        android:shadowColor="@android:color/white"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="@string/digital_out_test"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/x14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnType"
+            android:layout_width="@dimen/y50"
+            android:layout_height="@dimen/x20"
+            android:layout_marginStart="@dimen/y20"
+            android:background="@drawable/btn_b"
+            android:paddingLeft="@dimen/x3"
+            android:paddingRight="@dimen/x3"
+            android:text="@string/uart"
+            android:textAllCaps="false"
+            android:textSize="@dimen/x11" />
+
+        <LinearLayout
+            android:id="@+id/layout_TcpTestCfg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/btnTypeChannel"
+                android:layout_width="@dimen/y60"
+                android:layout_height="@dimen/x20"
+                android:layout_marginStart="@dimen/y20"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="@dimen/x3"
+                android:paddingRight="@dimen/x3"
+                android:textAllCaps="false"
+                android:textSize="@dimen/x11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_uartTestCfg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSCBY"
+                android:layout_width="@dimen/y50"
+                android:layout_height="@dimen/x20"
+                android:layout_marginStart="@dimen/y10"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="@dimen/x3"
+                android:paddingRight="@dimen/x3"
+                android:text="@string/rs232"
+                android:textAllCaps="false"
+                android:textSize="@dimen/x11" />
+
+            <Button
+                android:id="@+id/btNoIo"
+                android:layout_width="@dimen/y50"
+                android:layout_height="@dimen/x20"
+                android:layout_marginStart="@dimen/y10"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="@dimen/x3"
+                android:paddingRight="@dimen/x3"
+                android:text="@string/outPut1"
+                android:textAllCaps="false"
+                android:textSize="@dimen/x11" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btReHexAscii"
+            android:layout_width="@dimen/y30"
+            android:layout_height="@dimen/x20"
+            android:layout_marginStart="@dimen/y10"
+            android:background="@drawable/btn_b"
+            android:paddingLeft="@dimen/x3"
+            android:paddingRight="@dimen/x3"
+            android:text="@string/hex"
+            android:textAllCaps="false"
+            android:textSize="@dimen/x11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/y25"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/protocolTest"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x13" />
+
+        <Spinner
+            android:id="@+id/spXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/y20"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x120"
+        android:layout_marginTop="@dimen/x3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/y20"
+            android:layout_marginEnd="@dimen/y10"
+            android:layout_weight="1"
+            android:background="@drawable/test_bj"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:id="@+id/txReceTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbars="vertical"
+                    android:text="@string/receivingArea"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/x8" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnKSJS"
+                android:layout_width="@dimen/y55"
+                android:layout_height="@dimen/x20"
+                android:layout_marginBottom="@dimen/x3"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="@dimen/x3"
+                android:paddingRight="@dimen/x3"
+                android:text="@string/startReceive"
+                android:textAllCaps="false"
+                android:textSize="@dimen/x11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/y10"
+            android:layout_marginRight="@dimen/y10"
+            android:layout_weight="1"
+            android:background="@drawable/test_bj"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:id="@+id/txtSendMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbars="vertical"
+                    android:text="@string/sendingArea"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/x8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/measurement_value"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/x12" />
+
+                <EditText
+                    android:id="@+id/eTclz"
+                    style="@style/CEditText"
+                    android:ems="4"
+                    android:inputType="numberDecimal"
+                    />
+
+                <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="@dimen/y35"
+                    android:layout_height="@dimen/x20"
+                    android:layout_marginStart="@dimen/y5"
+                    android:background="@drawable/btn_b"
+                    android:paddingLeft="@dimen/x3"
+                    android:paddingRight="@dimen/x3"
+                    android:text="@string/sending"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/x11" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

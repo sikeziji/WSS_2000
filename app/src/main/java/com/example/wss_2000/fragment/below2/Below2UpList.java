@@ -9,9 +9,7 @@ import com.example.wss_2000.R;
 import com.example.wss_2000.base.BaseEventMessage;
 import com.example.wss_2000.base.fragment.BaseFragment;
 import com.example.wss_2000.base.fragment.FragmentUtils;
-import com.example.wss_2000.fragment.below2.content1.reservedetail.Left2_Content2_Reserved;
-import com.example.wss_2000.fragment.below2.content1.Left2_Content3;
-import com.example.wss_2000.fragment.below2.content1.sampledetail.Left2_Content1_Sample;
+import com.example.wss_2000.fragment.below2.content1.Left2_Content1;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
@@ -53,7 +51,6 @@ public class Below2UpList extends BaseFragment {
 
     @Override
     protected int getLayoutResId() {
-
         return R.layout.fragment_below2_up;
     }
 
@@ -64,7 +61,7 @@ public class Below2UpList extends BaseFragment {
 
     @Override
     public View initView(View view) {
-        addAndshowFragment(position, Left2_Content1_Sample.newInstance());
+        addAndshowFragment(position, Left2_Content1.newInstance());
 //
 //        if (getModePermissions(mCompName, "测量参数")) {
 //            showFragment(mFragments[0]);
@@ -97,18 +94,19 @@ public class Below2UpList extends BaseFragment {
         switch (view.getId()) {
             case R.id.btnLeft1:
                 position = 0;
-                addAndshowFragment(position, Left2_Content1_Sample.newInstance());
+                addAndshowFragment(position, Left2_Content1.newInstance());
                 break;
             case R.id.btnLeft2:
                 position = 1;
-                addAndshowFragment(position, Left2_Content2_Reserved.newInstance());
+                addAndshowFragment(position, Left2_Content2.newInstance());
                 break;
             case R.id.btnLeft3:
                 position = 2;
                 addAndshowFragment(position, Left2_Content3.newInstance());
+                break;
             case R.id.btnLeft4:
                 position = 3;
-                addAndshowFragment(position, Left2_Content3.newInstance());
+                addAndshowFragment(position, Left2_Content4.newInstance());
                 break;
         }
     }

@@ -160,7 +160,6 @@ public class GenerateValueFiles {
                 addition = args[0];
             }
         } catch (NumberFormatException e) {
-
             System.err
                     .println("right input params : java -jar xxx.jar width height w,h_w,h_..._w,h;");
             e.printStackTrace();

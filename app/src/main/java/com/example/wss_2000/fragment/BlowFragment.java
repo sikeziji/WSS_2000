@@ -6,13 +6,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-
 import com.example.wss_2000.MainActivity;
 import com.example.wss_2000.R;
 import com.example.wss_2000.base.fragment.BaseFragment;
 import com.example.wss_2000.base.fragment.FragmentUtils;
 import com.example.wss_2000.fragment.below1.Below1UpList;
 import com.example.wss_2000.fragment.below2.Below2UpList;
+import com.example.wss_2000.fragment.below4.Below4UpList;
+import com.example.wss_2000.fragment.below5.Below5UpList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -95,10 +96,10 @@ public class BlowFragment extends BaseFragment {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnBelow1:
-                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, new Below1UpList(), false);
+                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below1UpList.newInstance(), false);
                 break;
             case R.id.btnBelow2:
-                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, new Below2UpList(), false);
+                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below2UpList.newInstance(), false);
                 break;
             case R.id.btnBelow3:
                 MainActivity.winID = R.id.btnBelow3;
@@ -118,9 +119,11 @@ public class BlowFragment extends BaseFragment {
 //                    st.setArguments(bundle);
 //                    st.show(getChildFragmentManager(), "Dialog_password");
 //                }
+                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below4UpList.newInstance(), false);
+
                 break;
             case R.id.btnBelow5:
-//                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, new Below5UpList(), false);
+                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below5UpList.newInstance(), false);
                 break;
         }
     }

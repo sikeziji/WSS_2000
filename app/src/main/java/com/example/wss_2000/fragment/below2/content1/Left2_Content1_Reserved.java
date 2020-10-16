@@ -1,4 +1,4 @@
-package com.example.wss_2000.fragment.below2.content1.reservedetail;
+package com.example.wss_2000.fragment.below2.content1;
 
 import android.os.Bundle;
 import android.view.View;
@@ -23,18 +23,18 @@ import butterknife.BindView;
  * @CreateDate: 2020/10/15 16:27
  * @Version: 1.0
  */
-public class Left2_Content2_Reserved extends BaseFragment implements AdapterView.OnItemSelectedListener {
+public class Left2_Content1_Reserved extends BaseFragment implements AdapterView.OnItemSelectedListener {
 
-    private static Left2_Content2_Reserved fragment;
+    private static Left2_Content1_Reserved fragment;
     @BindView(R.id.reservedSampleMode)
     Spinner reservedSampleMode;
     private String[] mReservedSampleMode;
 
 
-    public static Left2_Content2_Reserved newInstance() {
+    public static Left2_Content1_Reserved newInstance() {
         Bundle args = new Bundle();
         if (fragment == null) {
-            fragment = new Left2_Content2_Reserved();
+            fragment = new Left2_Content1_Reserved();
         }
         fragment.setArguments(args);
         return fragment;
@@ -42,7 +42,7 @@ public class Left2_Content2_Reserved extends BaseFragment implements AdapterView
 
     @Override
     protected int getLayoutResId() {
-        return R.layout.left2fragmentall2;
+        return R.layout.left2fragment_reserved;
     }
 
     @Override

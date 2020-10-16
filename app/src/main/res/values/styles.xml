@@ -10,4 +10,84 @@
         <item name="android:windowActionBar">false</item>
     </style>
 
+    <style name="CButton_Dialog">
+        <item name="android:layout_width">@dimen/y50</item>
+        <item name="android:layout_height">@dimen/x25</item>
+        <item name="android:textSize">@dimen/x10</item>
+        <item name="android:background">@drawable/btn</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="CButton_Big">
+        <item name="android:layout_width">@dimen/y80</item>
+        <item name="android:layout_height">@dimen/x35</item>
+        <item name="android:background">@drawable/btn</item>
+        <item name="android:textSize">@dimen/x14</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="CEditText">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:gravity">center_vertical|center</item>
+        <item name="android:layout_width">@dimen/y45</item>
+        <item name="android:layout_height">@dimen/x20</item>
+        <item name="android:textColor">@android:color/black</item>
+        <!--<item name="android:layout_marginBottom">10px</item>-->
+        <item name="android:layout_marginLeft">@dimen/y8</item>
+        <!--<item name="android:layout_marginRight">10px</item>-->
+        <!--<item name="android:layout_marginTop">10px</item>-->
+        <!--<item name="android:paddingTop">2px</item>-->
+        <!--<item name="android:paddingBottom">2px</item>-->
+        <!--<item name="android:paddingLeft">2px</item>-->
+        <!--<item name="android:paddingRight">2px</item>-->
+        <item name="android:textSize">@dimen/x10</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+    </style>
+
+    <style name="Base_AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+
+        <!--不设置在6.0以上会出现，宽度不充满屏幕的情况-->
+        <item name="windowMinWidthMinor">90%</item>
+
+        <!-- 取消标题栏，如果在代码中settitle的话会无效 -->
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- 标题的和Message的文字颜色 -->
+        <!--<item name="android:textColorPrimary">@color/black</item>-->
+
+        <!-- 在使用v7包的alertDialog中无效，6.0中的app.alertDialog有效，这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+        <item name="android:topDark">@color/white</item>
+
+        <!-- 6.0有效，设置整个背景的颜色，在颜色后面就透明度无法使dailog透明 -->
+        <!-- 慎用，会出现奇怪的背景边框-->
+        <!--<item name="android:background">@color/white</item>-->
+
+        <!-- 有时无效，在某些系统上面设置背景颜色之后出现奇怪的背景，处这里设置背景为透明，为了隐藏边框 -->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowFrame">@null</item>-->
+
+        <!-- 进入和退出动画，左进右出（系统自带） -->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>-->
+
+        <!-- 按钮字体颜色,全部一起改，单个改需要在Java代码中修改 -->
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="CButton_directory">
+        <item name="android:layout_width">60px</item>
+        <item name="android:layout_height">40px</item>
+        <item name="android:background">@drawable/btn</item>
+        <item name="android:textSize">18px</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="Show_textStyle">
+        <item name="android:textSize">18px</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
 </resources>

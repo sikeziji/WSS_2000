@@ -1,4 +1,4 @@
-package com.example.wss_2000.fragment.below2.content1;
+package com.example.wss_2000.fragment.below5;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,21 +8,22 @@ import com.example.wss_2000.base.fragment.BaseFragment;
 
 /**
  * @ProjectName: WSS_2000
- * @Package: com.example.wss_2000.fragment.below2
- * @ClassName: Left2_Content2
+ * @Package: com.example.wss_2000.fragment.below5
+ * @ClassName: Left5_Content1
  * @Description: java类作用描述
  * @Author: wangj
- * @CreateDate: 2020/10/15 16:27
+ * @CreateDate: 2020/10/16 11:48
  * @Version: 1.0
  */
-public class Left2_Content3 extends BaseFragment {
+public class Left5_Content6 extends BaseFragment {
 
-    private static Left2_Content3 fragment;
+    private static Left5_Content6 fragment;
 
-    public static Left2_Content3 newInstance() {
+    public static Left5_Content6 newInstance() {
+
         Bundle args = new Bundle();
         if (fragment == null) {
-            fragment = new Left2_Content3();
+            fragment = new Left5_Content6();
         }
         fragment.setArguments(args);
         return fragment;
@@ -30,7 +31,7 @@ public class Left2_Content3 extends BaseFragment {
 
     @Override
     protected int getLayoutResId() {
-        return R.layout.left2fragment3;
+        return R.layout.left5fragment6;
     }
 
     @Override

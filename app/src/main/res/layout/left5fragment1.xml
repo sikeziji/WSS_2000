@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/y65"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y47"
+            android:text="@string/runningBoard"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+
+        <TextView
+            android:id="@+id/tvHMIVer"
+            android:layout_width="@dimen/y235"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y24"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_JKB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/y65"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y47"
+            android:text="@string/IO_board"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+
+        <TextView
+            android:id="@+id/tvJKBVer"
+            android:layout_width="@dimen/y235"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y24"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/y65"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y47"
+            android:text="@string/CK_A"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+
+        <TextView
+            android:id="@+id/tvCKAVer"
+            android:layout_width="@dimen/y235"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y24"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_CKB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/y65"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y47"
+            android:text="@string/CK_B"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+
+        <TextView
+            android:id="@+id/tvCKBVer"
+            android:layout_width="@dimen/y235"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y24"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_CDJLB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/y65"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y47"
+            android:text="@string/measure_board"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+
+        <TextView
+            android:id="@+id/tvCDJLVer"
+            android:layout_width="@dimen/y235"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y24"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_JLB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/y65"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y47"
+            android:text="@string/metering_board"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+
+        <TextView
+            android:id="@+id/tvJLBVer"
+            android:layout_width="@dimen/y235"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y24"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ORPDJB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/y65"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y47"
+            android:text="@string/orp_board"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+
+        <TextView
+            android:id="@+id/tvORPVer"
+            android:layout_width="@dimen/y235"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y24"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/y12" />
+    </LinearLayout>
+</LinearLayout>
