@@ -41,10 +41,13 @@ public class Below2UpList extends BaseFragment {
 
 
     private int position = 0, prePosition = 0;
+    private static Below2UpList fragment;
 
     public static Below2UpList newInstance() {
         Bundle args = new Bundle();
-        Below2UpList fragment = new Below2UpList();
+        if (fragment == null) {
+            fragment = new Below2UpList();
+        }
         fragment.setArguments(args);
         return fragment;
     }

@@ -17,7 +17,7 @@
     <LinearLayout
         android:id="@+id/layout_frame_below"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/x45"
+        android:layout_height="@dimen/y40"
         android:orientation="horizontal">
 
     </LinearLayout>

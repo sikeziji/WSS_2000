@@ -4,9 +4,7 @@ import com.example.wss_2000.AppHelp.GenerateValueFiles;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -20,10 +18,9 @@ public class ExampleUnitTest {
     }
 
     @Test
-    public void generateDimens(){
+    public void generateDimens() {
         int baseW = 320;
         int baseH = 480;
-
         String addition = "";
 //        try {
 //            if (args.length >= 3) {

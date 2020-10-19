@@ -18,15 +18,15 @@
         <ImageButton
             android:id="@+id/btnLeft1"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
-            android:src="@drawable/l4l1" />
+            android:src="@drawable/l4l1" />`
 
         <ImageButton
             android:id="@+id/btnLeft2"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/l4l2" />
@@ -34,7 +34,7 @@
         <ImageButton
             android:id="@+id/btnLeft3"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/l4l3" />

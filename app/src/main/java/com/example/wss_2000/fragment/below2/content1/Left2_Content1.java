@@ -103,7 +103,7 @@ public class Left2_Content1 extends BaseFragment {
     private void addAndshowFragment(int position, BaseFragment fragment) {
         if (mFragments[position] == null) {
             mFragments[position] = fragment;
-            FragmentUtils.addFragment(getChildFragmentManager(), mFragments[position], R.id.fragment_below2_up_blow);
+            FragmentUtils.addFragment(getFragmentManager(), mFragments[position], R.id.fragment_below2_up_blow);
         }
         FragmentUtils.hideShowFragment(mFragments[prePosition], mFragments[position]);
         prePosition = position;

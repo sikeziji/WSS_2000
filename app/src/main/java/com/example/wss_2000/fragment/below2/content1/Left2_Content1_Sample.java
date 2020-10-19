@@ -127,7 +127,7 @@ public class Left2_Content1_Sample extends BaseFragment implements AdapterView.O
                 }
                 break;
         }
-        //跟新界面
+        //更新界面
         EventBusUtil.setEventBusMessage("MainActivity", MessageContent.MAINACTIVITY_CLOSEANDHIDE, 0, 0, view);
     }
 

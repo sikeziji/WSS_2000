@@ -4,20 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
+
     <LinearLayout
         android:id="@+id/layout_left"
         android:layout_width="@dimen/x105"
         android:layout_height="match_parent"
         android:background="@drawable/line"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/x10"
-            />
+            android:layout_height="@dimen/x10" />
+
         <ImageButton
             android:id="@+id/btnLeft1"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/l1l1" />
@@ -25,7 +27,7 @@
         <ImageButton
             android:id="@+id/btnLeft2"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/l1l2" />
@@ -33,7 +35,7 @@
         <ImageButton
             android:id="@+id/btnLeft3"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/l1l3" />
@@ -42,15 +44,15 @@
         <ImageButton
             android:id="@+id/btnLeft4"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
-            android:src="@drawable/l1l3" />
+            android:src="@drawable/l1l4" />
 
         <ImageButton
             android:id="@+id/btnLeft5"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/l1l3" />
@@ -60,9 +62,7 @@
     <FrameLayout
         android:id="@+id/fragment_below1_up_right"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

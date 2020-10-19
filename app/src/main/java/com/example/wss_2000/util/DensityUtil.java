@@ -1,4 +1,4 @@
-package com.example.wss_2000.widget;
+package com.example.wss_2000.util;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -59,7 +59,7 @@ public class DensityUtil {
 
     public static void fixViewPx(Context context, View v) {
         ViewGroup.LayoutParams layoutParams = v.getLayoutParams();
-        layoutParams.height = px_y((float)ScreenUtils.getRealScreenHeight(context), (float)layoutParams.height);
+        layoutParams.height = px_y((float) ScreenUtils.getRealScreenHeight(context), (float)layoutParams.height);
         layoutParams.width = px_x((float)ScreenUtils.getScreenWidth(context), (float)layoutParams.width);
         double ppi = Math.sqrt(1408576.0D) / 7.0D;
         v.setLayoutParams(layoutParams);

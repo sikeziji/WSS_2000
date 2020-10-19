@@ -18,7 +18,7 @@
         <ImageButton
             android:id="@+id/btnLeft1"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/l5l1" />
@@ -27,7 +27,7 @@
         <Button
             android:id="@+id/btnLeft2"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:text="样品信息" />
@@ -35,7 +35,7 @@
         <Button
             android:id="@+id/btnLeft3"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:text="采样记录" />
@@ -44,7 +44,7 @@
         <Button
             android:id="@+id/btnLeft4"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:text="留样记录" />
@@ -78,7 +78,7 @@
         <ImageButton
             android:id="@+id/btnLeft5"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/l5l5" />
@@ -86,7 +86,7 @@
         <ImageButton
             android:id="@+id/btnLeft6"
             android:layout_width="@dimen/x105"
-            android:layout_height="@dimen/x40"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/l5l6" />

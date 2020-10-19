@@ -1,4 +1,4 @@
-package com.example.wss_2000.widget;
+package com.example.wss_2000.util;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

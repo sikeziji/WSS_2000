@@ -7,7 +7,7 @@
 
     <!--    <LinearLayout-->
     <!--        android:id="@+id/layout_left"-->
-    <!--        android:layout_width="@dimen/x105"-->
+    <!--        android:layout_width="@dimen/x150"-->
     <!--        android:layout_height="match_parent"-->
     <!--        android:background="@drawable/line"-->
     <!--        android:orientation="vertical">-->
@@ -17,7 +17,7 @@
     <!--            />-->
     <!--        <ImageButton-->
     <!--            android:id="@+id/btnLeft1"-->
-    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_width="@dimen/x150"-->
     <!--            android:layout_height="@dimen/x40"-->
     <!--            android:background="@android:color/transparent"-->
     <!--            android:scaleType="fitXY"-->
@@ -25,7 +25,7 @@
 
     <!--        <ImageButton-->
     <!--            android:id="@+id/btnLeft2"-->
-    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_width="@dimen/x150"-->
     <!--            android:layout_height="@dimen/x40"-->
     <!--            android:background="@android:color/transparent"-->
     <!--            android:scaleType="fitXY"-->
@@ -33,7 +33,7 @@
 
     <!--        <ImageButton-->
     <!--            android:id="@+id/btnLeft3"-->
-    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_width="@dimen/x150"-->
     <!--            android:layout_height="@dimen/x40"-->
     <!--            android:background="@android:color/transparent"-->
     <!--            android:scaleType="fitXY"-->
@@ -42,7 +42,7 @@
 
     <!--        <ImageButton-->
     <!--            android:id="@+id/btnLeft4"-->
-    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_width="@dimen/x150"-->
     <!--            android:layout_height="@dimen/x40"-->
     <!--            android:background="@android:color/transparent"-->
     <!--            android:scaleType="fitXY"-->
@@ -50,7 +50,7 @@
 
     <!--        <ImageButton-->
     <!--            android:id="@+id/btnLeft5"-->
-    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_width="@dimen/x150"-->
     <!--            android:layout_height="@dimen/x40"-->
     <!--            android:background="@android:color/transparent"-->
     <!--            android:scaleType="fitXY"-->
@@ -58,7 +58,7 @@
 
     <!--        <ImageButton-->
     <!--            android:id="@+id/btnLeft6"-->
-    <!--            android:layout_width="@dimen/x105"-->
+    <!--            android:layout_width="@dimen/x150"-->
     <!--            android:layout_height="@dimen/x40"-->
     <!--            android:background="@android:color/transparent"-->
     <!--            android:scaleType="fitXY"-->
@@ -77,32 +77,28 @@
         <Button
             android:id="@+id/btnLeft1"
             android:layout_width="@dimen/x105"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:text="运行设置" />
 
         <Button
             android:id="@+id/btnLeft2"
             android:layout_width="@dimen/x105"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:text="时间设置" />
 
         <Button
             android:id="@+id/btnLeft3"
             android:layout_width="@dimen/x105"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:text="系统设置" />
 
         <Button
             android:id="@+id/btnLeft4"
             android:layout_width="@dimen/x105"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="@dimen/y30"
             android:background="@android:color/transparent"
             android:text="通讯设置" />
 
