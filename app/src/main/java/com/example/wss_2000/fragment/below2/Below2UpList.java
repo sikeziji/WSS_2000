@@ -62,6 +62,7 @@ public class Below2UpList extends BaseFragment {
     @Override
     public View initView(View view) {
         addAndshowFragment(position, Left2_Content1.newInstance());
+
 //
 //        if (getModePermissions(mCompName, "测量参数")) {
 //            showFragment(mFragments[0]);

@@ -49,9 +49,11 @@ public class Left2_Content1_Sample extends BaseFragment implements AdapterView.O
 
     public static BaseFragment newInstance() {
         Bundle args = new Bundle();
-        if (fragment == null) {
-            fragment = new Left2_Content1_Sample();
+        if (fragment != null) {
+            fragment.setArguments(args);
+            return fragment;
         }
+        fragment = new Left2_Content1_Sample();
         fragment.setArguments(args);
         return fragment;
     }
@@ -70,6 +72,9 @@ public class Left2_Content1_Sample extends BaseFragment implements AdapterView.O
     protected View initView(View view) {
         //默认界面为0
         addAndshowFragment(0, Left2_Content1_detail1.newInstance());
+
+//        mFragments[0] = Left2_Content1_detail1.newInstance();
+//        FragmentUtils.addFragment(getChildFragmentManager(), mFragments[0], R.id.fragment_below2_up_blow);
 
         mSamplingModeArray = getResources().getStringArray(R.array.smplingMode);
 

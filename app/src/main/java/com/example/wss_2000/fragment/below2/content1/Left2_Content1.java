@@ -63,6 +63,13 @@ public class Left2_Content1 extends BaseFragment {
     @Override
     protected View initView(View view) {
         addAndshowFragment(position, Left2_Content1_Sample.newInstance());
+
+//        if (mFragments[0] == null) {
+//            mFragments[0] = Left2_Content1_Sample.newInstance();
+//            FragmentUtils.addFragment(getChildFragmentManager(), mFragments[0], R.id.fragment_below2_up_blow);
+//        } else {
+//            FragmentUtils.showFragment(Left2_Content1_Sample.newInstance());
+//        }
         return null;
     }
 

@@ -117,7 +117,7 @@ public class TcpPort extends Communication {
      */
     @Override
     public boolean receiveParsing(String str, Communication port, byte[] rs) {
-       /*TODO 数据描述
+       /*TODO TCPPort数据描述
         setReceiveData(true);
         int iTcpProtocol=0;
         int iMsg=5;

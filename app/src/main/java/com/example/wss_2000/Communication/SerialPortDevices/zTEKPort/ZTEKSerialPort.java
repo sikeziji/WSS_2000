@@ -79,7 +79,7 @@ public class ZTEKSerialPort extends Communication {
     @Override
     public boolean receiveParsing(String str, Communication port, byte[] rs) {
       /*
-        TODO ZTEKSerialPort
+        TODO ZTEKSerialPort 接受数据
         // 接收到数据
         setReceiveData(true);
         EventBusUtil.setEventBusMessage("MainActivity", 7, 0, 0, "接收3 " + rs.length + "数据：" + bytesToHexString(rs, rs.length));

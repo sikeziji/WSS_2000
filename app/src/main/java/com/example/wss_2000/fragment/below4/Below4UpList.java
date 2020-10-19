@@ -5,8 +5,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import androidx.fragment.app.Fragment;
-
 import com.example.wss_2000.R;
 import com.example.wss_2000.base.fragment.BaseFragment;
 import com.example.wss_2000.base.fragment.FragmentUtils;
@@ -100,17 +98,7 @@ public class Below4UpList extends BaseFragment {
             mFragments[position] = fragment;
             FragmentUtils.addFragment(getChildFragmentManager(), mFragments[position], R.id.fragment_below4_up_right);
         }
-
-        if (mFragments[prePosition] == null || mFragments[position] == null) {
-            System.out.println("prePosition = " + prePosition);
-            System.out.println("position = " + position);
-        }
-        if (fragment.getFragmentManager() == null) {
-            System.out.println("fragment is null："+ fragment.getClass().getName().toString());
-        }
-
-        Fragment fragment1 = FragmentUtils.hideShowFragment(mFragments[prePosition], mFragments[position]);
-
+        FragmentUtils.hideShowFragment(mFragments[prePosition], mFragments[position]);
         prePosition = position;
     }
 }

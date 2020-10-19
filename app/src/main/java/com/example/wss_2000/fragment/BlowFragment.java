@@ -41,8 +41,8 @@ public class BlowFragment extends BaseFragment {
     ImageButton btnBelow5;
 
     Unbinder unbinder;
-    private BaseFragment[] mFragments = new BaseFragment[4];
-    int position = 0, prePosition = 0;
+    private BaseFragment[] mFragments = new BaseFragment[5];
+    int position = 2, prePosition = 2;
 
     @Override
     protected int getLayoutResId() {
@@ -56,6 +56,8 @@ public class BlowFragment extends BaseFragment {
 
     @Override
     public View initView(View view) {
+        addAndshowFragment(position, MainFragment.newInstance());
+
 //
 //        mFragments[0] = Below1UpList.newInstance();
 //        mFragments[1] = Below2UpList.newInstance();
@@ -96,17 +98,27 @@ public class BlowFragment extends BaseFragment {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnBelow1:
-                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below1UpList.newInstance(), false);
+                position = 0;
+//                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below1UpList.newInstance(), false);
+                addAndshowFragment(position, Below1UpList.newInstance());
+
                 break;
             case R.id.btnBelow2:
-                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below2UpList.newInstance(), false);
+                position = 1;
+//                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below2UpList.newInstance(), false);
+                addAndshowFragment(position, Below2UpList.newInstance());
+
                 break;
             case R.id.btnBelow3:
+                position = 2;
                 MainActivity.winID = R.id.btnBelow3;
 //                FragmentUtils.replaceFragment(getFragmentManager(), R.id.All, MainFragment.newInstance(), false);
-                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, MainFragment.newInstance(), false);
+//                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, MainFragment.newInstance(), false);
+                addAndshowFragment(position, MainFragment.newInstance());
+
                 break;
             case R.id.btnBelow4:
+                position = 3;
 //                if (doFlowing.get(MainActivity.mCompName).equals(getString(R.string.selfCheck))) {
 //                    break;
 //                }
@@ -119,12 +131,26 @@ public class BlowFragment extends BaseFragment {
 //                    st.setArguments(bundle);
 //                    st.show(getChildFragmentManager(), "Dialog_password");
 //                }
-                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below4UpList.newInstance(), false);
+//                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below4UpList.newInstance(), false);
+                addAndshowFragment(position, Below4UpList.newInstance());
 
                 break;
             case R.id.btnBelow5:
-                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below5UpList.newInstance(), false);
+                position = 4;
+                addAndshowFragment(position, Below5UpList.newInstance());
+//                FragmentUtils.replaceFragment(getFragmentManager(), R.id.layout_frame_up, Below5UpList.newInstance(), false);
                 break;
         }
     }
+
+
+    private void addAndshowFragment(int position, BaseFragment fragment) {
+        if (mFragments[position] == null) {
+            mFragments[position] = fragment;
+            FragmentUtils.addFragment(getFragmentManager(), mFragments[position], R.id.layout_frame_up);
+        }
+        FragmentUtils.hideShowFragment(mFragments[prePosition], mFragments[position]);
+        prePosition = position;
+    }
+
 }

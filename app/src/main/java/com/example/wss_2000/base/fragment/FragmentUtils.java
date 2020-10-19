@@ -51,7 +51,7 @@ public class FragmentUtils {
      * @param fragment        fragment     *
      * @return fragment
      */
-    public static Fragment addFragment( FragmentManager fragmentManager, @NonNull Fragment fragment, int containerId) {
+    public static Fragment addFragment(FragmentManager fragmentManager, @NonNull Fragment fragment, int containerId) {
         return addFragment(fragmentManager, fragment, containerId, false);
     }
 
@@ -189,7 +189,7 @@ public class FragmentUtils {
      * @param fragment        fragment     *
      * @param isAddStack      是否入回退栈     * @return fragment
      */
-    public static Fragment replaceFragment( FragmentManager fragmentManager, int containerId, @NonNull Fragment fragment, boolean isAddStack) {
+    public static Fragment replaceFragment(FragmentManager fragmentManager, int containerId, @NonNull Fragment fragment, boolean isAddStack) {
         putArgs(fragment, new Args(containerId, false, isAddStack));
         return operateFragment(fragmentManager, null, fragment, TYPE_REPLACE_FRAGMENT);
     }
@@ -559,8 +559,8 @@ public class FragmentUtils {
     private static List<Fragment> getFragmentsIsInStack(@NonNull FragmentManager fragmentManager, boolean isInStack) {
         List<Fragment> fragments = null;
 //        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            fragments = fragmentManager.getFragments();
-     //   }
+        fragments = fragmentManager.getFragments();
+        //   }
         if (fragments == null || fragments.isEmpty()) return Collections.emptyList();
         List<Fragment> result = new ArrayList<>();
         for (int i = fragments.size() - 1; i >= 0; --i) {
@@ -610,9 +610,9 @@ public class FragmentUtils {
      */
     private static List<FragmentNode> getAllFragmentsIsInStack(@NonNull FragmentManager fragmentManager, List<FragmentNode> result, boolean isInStack) {
         List<Fragment> fragments = null;
-       // if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            fragments = fragmentManager.getFragments();
-      //  }
+        // if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+        fragments = fragmentManager.getFragments();
+        //  }
         if (fragments == null || fragments.isEmpty()) return Collections.emptyList();
         for (int i = fragments.size() - 1; i >= 0; --i) {
             Fragment fragment = fragments.get(i);
@@ -685,9 +685,9 @@ public class FragmentUtils {
      */
     public static boolean dispatchBackPress(@NonNull FragmentManager fragmentManager) {
         List<Fragment> fragments = null;
-       // if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            fragments = fragmentManager.getFragments();
-      //  }
+        // if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+        fragments = fragmentManager.getFragments();
+        //  }
         if (fragments == null || fragments.isEmpty()) return false;
         for (int i = fragments.size() - 1; i >= 0; --i) {
             Fragment fragment = fragments.get(i);
@@ -776,8 +776,6 @@ public class FragmentUtils {
     public interface OnBackClickListener {
         boolean onBackClick();
     }
-
-
 
 
 }

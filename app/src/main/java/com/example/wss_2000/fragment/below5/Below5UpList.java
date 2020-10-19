@@ -64,6 +64,13 @@ public class Below5UpList extends BaseFragment {
     protected View initView(View view) {
 
         addAndshowFragment(position, Left5_Content1.newInstance());
+
+//        if (mFragments[0] == null) {
+//            mFragments[0] =  Left5_Content1.newInstance();
+//            FragmentUtils.addFragment(getChildFragmentManager(), mFragments[0],  R.id.fragment_below5_up_right);
+//        } else {
+//            FragmentUtils.showFragment( Left5_Content1.newInstance());
+//        }
         return null;
     }
 

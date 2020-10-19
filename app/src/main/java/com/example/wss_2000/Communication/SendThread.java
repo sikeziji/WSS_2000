@@ -2,9 +2,7 @@ package com.example.wss_2000.Communication;
 
 import android.os.Environment;
 
-
 import com.example.wss_2000.MyApplication;
-import com.example.wss_2000.util.FileUtils;
 import com.example.wss_2000.util.PackageUtils;
 
 import java.io.File;
@@ -18,6 +16,7 @@ import static java.lang.System.arraycopy;
  * 创建时间    2019/11/26
  */
 public class SendThread extends Thread {
+    
     private Communication sp;
     private String commandDescribe;
     private Object mObject;
